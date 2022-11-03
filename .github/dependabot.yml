@@ -1,0 +1,26 @@
+version: 2
+updates:
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 10
+    assignees:
+      - "renehezser"
+
+  - package-ecosystem: docker
+    directory: /modules/SimulatedTemperatureSensorModule
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 10
+    assignees:
+      - "renehezser"
+
+  - package-ecosystem: nuget
+    directory: /modules/SimulatedTemperatureSensorModule
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 10
+    assignees:
+      - "renehezser"
