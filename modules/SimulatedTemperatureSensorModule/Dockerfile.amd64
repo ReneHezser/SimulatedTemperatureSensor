@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:7.0.100-bullseye-slim AS build-env
+FROM mcr.microsoft.com/dotnet/sdk:7.0.101-bullseye-slim AS build-env
 WORKDIR /app
 
 COPY *.csproj ./
