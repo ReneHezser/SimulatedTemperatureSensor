@@ -8,7 +8,7 @@ RUN useradd -ms /bin/bash moduleuser
 USER moduleuser
 RUN curl -sSL https://aka.ms/getvsdbgsh | bash /dev/stdin -v latest -l ~/vsdbg
 
-FROM mcr.microsoft.com/dotnet/sdk:7.0.102-bullseye-slim AS build-env
+FROM mcr.microsoft.com/dotnet/sdk:7.0.103-bullseye-slim AS build-env
 WORKDIR /app
 
 COPY *.csproj ./
